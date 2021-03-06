@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*buttons inside of the poster*/
+
+.button {
+  border: 2px solid white;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin: 1em 0;
+  padding: 0.5% 2%;
+  text-decoration: none;
+}
+
+/*Marvel Poster*/
+
+.poster {
+  align-items: flex-start;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: center;
+  padding: 5%;
+  width: 100%;
+}
+
+
+/*Marvel Character Poster*/
+#character-poster{
+    background-image: url("https://terrigen-cdn-dev.marvel.com/content/prod/1x/characters_art_mas_dsk_01.jpg");
+}
+
+/*Marvel Creators Poster*/
+#creators-poster{
+    height: 80% !important;
+    border-top: 1px solid white;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0,0, 0.5)), url("https://i2r9x7i6.stackpathcdn.com/app/uploads/2015/12/MD-stan-background-no-text-1120x630.jpg");
+    background-size:cover;
+}
+
+
+/* Slideshow container */
+.comic-slideshow-container {
+  border-top: 1px solid white;
+  width: auto;
+  height: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/*Marvel Events Poster*/
+#events-poster{
+    align-self: flex-end;
+    height: 80% !important;
+    border-top: 1px solid white;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0,0, 0.5)), url("https://i.annihil.us/u/prod/marvel/i/mg/2/a0/5ae09341531b2/clean.jpg");
+    background-size:cover;
+}
+
+#events-poster > *{
+    align-self: flex-end;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+/*For slide show of Marvel comics Poster*/
+#image-1 {
+  background-image: url("https://i.annihil.us/u/prod/marvel/i/mg/9/90/603fd0ad3f968.jpg");
+  background-size: cover;
+}
+
+#image-2 {
+  background-image: url("https://i.annihil.us/u/prod/marvel/i/mg/5/90/603fd2c1e4420.jpg");
+  background-size: cover;
+}
+
+#image-3 {
+  background-image: url("https://i.annihil.us/u/prod/marvel/i/mg/6/e0/603d76c76fe26.jpg");
+  background-size: cover;
+}
+
+#image-4 {
+  background-image: url("https://i.annihil.us/u/prod/marvel/i/mg/b/03/603d751f45917.jpg");
+  background-size: cover;
+}
+
+#image-5 {
+  background-image: url("https://i.annihil.us/u/prod/marvel/i/mg/3/b0/603837fd07b57.jpg");
+  background-size: cover;
+}
+
+.myslides {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*Marvel series Poster*/
+#series-poster{
+    height: 80% !important;
+    border-top: 1px solid white;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0,0, 0.5)), url("https://wallpaperaccess.com/full/13454.jpg");
+    background-size:cover;
+}
+
+
+/*Marvel Stories Poster*/
+#stories-poster{
+    height: 80% !important;
+    border-top: 1px solid white;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0,0, 0.5)), url("https://wallpaperaccess.com/full/699916.jpg");
+    background-size:cover;
+}
+
+#stories-poster > *{
+    align-self: flex-end;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 5%;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 1em;
+  }
+}
+

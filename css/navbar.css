@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: white;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height:100%;
+}
+
+
+/*For Nav bar*/
+nav,
+.nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*For the table inside of the nav*/
+.nav-links-container table{
+
+    border:none;
+    border-collapse: collapse;
+
+}
+
+.nav-items > td{
+    padding: 20px;
+    border: 1px solid rgba(61, 60, 60, 0.692);
+}
+
+
+nav {
+    background-color: #151515;
+    border-bottom: 1px solid white;
+    padding: 0 50px;
+}
+
+/*For individual links*/
+.nav-links-container {
+    list-style: none;
+    width: 60%;
+}
+
+.nav-links-container li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+
+/*For logo*/
+#logo{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#logo > h3{
+    margin: 10% 0% 0% 10%;
+}
+
+/*For Footer*/
+footer{
+    background-color: #151515;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+footer > *{
+    color: white;
+}

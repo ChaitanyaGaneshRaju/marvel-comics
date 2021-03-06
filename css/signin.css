@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: black;
+}
+
+#error-message{
+    color: red;
+}
+
+/*For logo*/
+#logo-container {
+    margin-top: 2%;
+    text-align: center;
+}
+
+#logo-container>img {
+    height: 10vh;
+}
+
+/*For signin*/
+#signin-container {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 65vh;
+    background-color: white;
+}
+
+/*For signin credentials inputs(userid, password, signin button)*/
+
+#signin-credentials {
+    text-align: center;
+    color: #1f2240;
+    display: grid;
+    grid-row-gap: 20px;
+    padding: 5% 20% 20% 20%;
+}
+
+
+#signin-credentials > input {
+    border: none;
+    border-bottom: 2px solid #1f2240;
+    padding: 2%;
+    outline: none;
+}
+
+#signin-credentials> input[type=submit] {
+    background-color: #1f2240;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*For left side image of the signin panel*/
+
+#signin-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#signin-image-container>img {
+    height: 435px;
+}

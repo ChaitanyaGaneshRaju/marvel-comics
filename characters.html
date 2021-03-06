@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Characters</title>
+    <link rel="shortcut icon" href="https://www.marvel.com/static/images/favicon/android-chrome-icon-194.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/characters.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div id="logo">
+        <img src="./assets/logo.svg" alt="MARVEL" />
+        <h3>Hello,</h3>
+      </div>
+      <div class="nav-links-container">
+        <table>
+          <tr class="nav-items">
+            <td>
+              <li><a href="./index.html" id="home">Home</a></li>
+            </td>
+            <td>
+              <li><a href="./characters.html" id="characters">Characters</a></li>
+            </td>
+            <td>
+              <li><a href="#" id="comics">Comics</a></li>
+            </td>
+            <td>
+              <li><a href="#" id="creators">Creators</a></li>
+            </td>
+            <td>
+              <li><a href="#" id="events">Events</a></li>
+            </td>
+            <td>
+              <li><a href="#" id="series">Series</a></li>
+            </td>
+            <td>
+              <li><a href="#" id="stories">Stories</a></li>
+            </td>
+            <td>
+              <li><a href="#" id="signout">SignOut</a></li>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </nav>
+
+    <div id="poster">
+      <h1>MARVEL CHARACTERS</h1>
+      <h4>
+        Get hooked on a hearty helping of heroes and villains from the humble
+        House of Ideas!
+      </h4>
+    </div>
+
+    <!-- For page number -->
+    <div id="pagination"></div>
+
+    <!--Loading animation-->
+    <div id="loading-animation" class="loading-animation">
+      <img src="./assets/loading.svg" alt="" />
+    </div>
+
+    <!-- For loading the characters -->
+    <div id="cards-container"></div>
+
+    <footer>
+        <p>© 2021 MARVEL</p>
+        <a href="http://marvel.com">Data provided by Marvel. © 2021 MARVEL</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous"></script>
+    <script src="./js/pagination.js"></script>
+    <script src="./js/characters.js"></script>
+  </body>
+</html>

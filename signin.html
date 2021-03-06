@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="./css/signin.css">
+    <link rel="shortcut icon" href="https://www.marvel.com/static/images/favicon/android-chrome-icon-194.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    <div id="logo-container">
+        <img src="./assets/logo.svg" alt="">
+    </div>
+    <div id="signin-container">
+        <div id="signin-credentials-container">
+            <div id="signin-credentials">
+                <h2>SignIn</h2>
+                <p id="error-message"></p>
+                <input type="text" id="user-id" placeholder="UserId">
+                <input type="password" id="password" placeholder="Password">
+                <input type="submit" value="submit" onclick="signIn()">
+                <p>Don't have an account <a href="./signup.html">SignUp</a> here</p>
+            </div>
+        </div>
+
+        <div id="signin-image-container">
+            <img src="./assets/signinImage.png" alt="">
+        </div>
+
+    </div>
+</body>
+<script>
+    
+    async function hash(password) {
+        const buf = await crypto.subtle.digest("SHA-256", new TextEncoder("utf-8").encode(password));
+        return Array.prototype.map.call(new Uint8Array(buf), x => (('00' + x.toString(16)).slice(-2))).join('');
+    }
+
+    function signIn(){
+        const userid = document.getElementById("user-id").value
+        const password = document.getElementById("password").value
+        if(localStorage.getItem(userid)===null){
+            document.getElementById("error-message").innerHTML="User not found"
+        }
+        else{
+            hash(password).then((digest) => {
+                if(localStorage.getItem(userid)=== digest){
+                alert("Successfully signed in")
+                }
+                else
+                document.getElementById("error-message").innerHTML="Wrong password"
+            })
+        }
+    }
+</script>
+
+</html>

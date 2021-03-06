@@ -1,0 +1,111 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*For poster*/
+
+#poster {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  background-image: url("https://terrigen-cdn-dev.marvel.com/content/prod/1x/characters_art_mas_dsk_01.jpg");
+}
+
+iframe {
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+/*For buttons providing the pagination*/
+
+#pagination {
+  text-align: center;
+  margin: 0.5% 0%;
+  height: 5%;
+}
+
+#pagination a,
+#pagination i {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5%;
+  width: 4%;
+  height: 100%;
+  color: #ffffff;
+  font-weight: bolder;
+  text-align: center;
+  user-select: none;
+}
+
+#pagination a {
+  margin: 2px;
+  cursor: pointer;
+  background-color: #e62429;
+}
+
+#pagination i {
+  color: black !important;
+}
+
+#pagination a.current {
+  background-image: -moz-linear-gradient(top, #e62429, #00000065);
+}
+
+/*For cards container*/
+#cards-container {
+  padding: 2% 0% 2% 0%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.card {
+  cursor: pointer;
+}
+
+/*For cards image*/
+.card-image {
+  margin: 10px;
+  width: 140px;
+  background-color: #151515;
+  border: none;
+}
+
+.card-image img {
+  border-bottom: 3px solid #e62429;
+}
+
+/*For cards name*/
+.card-name {
+  position: relative;
+  color: white;
+  padding: 0%;
+}
+
+/*For cards right bottom corner cut*/
+.card-name ::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 15px solid white;
+  border-top: 15px solid #151515;
+  width: 0;
+}
+
+/*For loading the animation*/
+.loading-animation {
+  text-align: center;
+}

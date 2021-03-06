@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character</title>
+    <link rel="shortcut icon" href="https://www.marvel.com/static/images/favicon/android-chrome-icon-194.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/character.css">
+    </style>
+  </head>
+
+  <body>
+    <!--Nav Bar-->
+    <nav>
+        <div id="logo">
+          <img src="./assets/logo.svg" alt="MARVEL" />
+          <h3>Hello,</h3>
+        </div>
+        <div class="nav-links-container">
+          <table>
+            <tr class="nav-items">
+              <td>
+                <li><a href="./index.html" id="home">Home</a></li>
+              </td>
+              <td>
+                <li><a href="./characters.html" id="characters">Characters</a></li>
+              </td>
+              <td>
+                <li><a href="#" id="comics">Comics</a></li>
+              </td>
+              <td>
+                <li><a href="#" id="creators">Creators</a></li>
+              </td>
+              <td>
+                <li><a href="#" id="events">Events</a></li>
+              </td>
+              <td>
+                <li><a href="#" id="series">Series</a></li>
+              </td>
+              <td>
+                <li><a href="#" id="stories">Stories</a></li>
+              </td>
+              <td>
+                <li><a href="#" id="signout">SignOut</a></li>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </nav>
+  
+    <!--For character image and details of the character-->
+    <div id="character-container"></div>
+
+    <!--Comics Label-->
+    <h3 class="label" id="comics-label"></h3>
+    <!--Comics Container-->
+    <div id="comics-container"></div>
+
+
+    <!--Series Label-->
+    <h3 class="label" id="series-label"></h3>
+    <!--Series Container-->
+    <div id="series-container"></div>
+
+    <!--Events label-->
+    <h3 class="label" id="events-label"></h3>
+    <!--For events container-->
+    <div id="events-container"></div>
+
+    <!--Stories label-->
+    <h3 class="label" id="stories-label"></h3>
+    <!--stories container-->
+    <div id="stories-container"></div>
+
+
+    <!--Loading animation-->
+    <div id="loading-animation">
+      <img src="./assets/loading.svg" alt="" />
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p>© 2021 MARVEL</p>
+        <a href="http://marvel.com">Data provided by Marvel. © 2021 MARVEL</a>
+    </footer>
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+  <script src="./js/character.js"></script>
+</html>
