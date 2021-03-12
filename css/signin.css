@@ -19,16 +19,13 @@ body {
     text-align: center;
 }
 
-#logo-container>img {
-    height: 10vh;
-}
 
 /*For signin*/
 #signin-container {
     margin-top: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 65vh;
+
     background-color: white;
 }
 
@@ -39,7 +36,7 @@ body {
     color: #1f2240;
     display: grid;
     grid-row-gap: 20px;
-    padding: 5% 20% 20% 20%;
+    padding: 5% 20% 0% 20%;
 }
 
 
@@ -63,8 +60,6 @@ body {
 #signin-image-container {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 #signin-image-container>img {
