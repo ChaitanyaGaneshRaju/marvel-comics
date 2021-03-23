@@ -25,7 +25,6 @@ body {
     margin-top: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     background-color: white;
 }
 
@@ -58,8 +57,7 @@ body {
 /*For left side image of the signin panel*/
 
 #signin-image-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: grid;   
 }
 
 #signin-image-container>img {
